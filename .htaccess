@@ -3,6 +3,7 @@ Options -Indexes
 
 RewriteEngine On
 RewriteRule ^index\.php$ public/index.php [L]
+RewriteRule ^(login|register|contact)\.php$ public/$1.php [L]
 RewriteRule ^assets/(.*)$ public/assets/$1 [L]
 
 <IfModule mod_headers.c>
